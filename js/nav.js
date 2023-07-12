@@ -36,6 +36,7 @@ function updateNavOnLogin() {
   $navUserProfile.text(`${currentUser.username}`).show();
 }
 
+//* When a user click on submit on navbar, show submit form */
 function navSubmitStory(evt){
   console.debug("navSubmitStory", evt);
   hidePageComponents();
@@ -44,7 +45,7 @@ function navSubmitStory(evt){
 }
 $body.on("click", "#nav-submit", navSubmitStory);
 
-
+//* When user click on a star, it puts it on favorites.*/
 function navFavClick(evt){
   console.debug("navFavClick", evt);
   hidePageComponents();
